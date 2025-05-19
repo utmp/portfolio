@@ -84,7 +84,7 @@
         <div class="projects-container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
 <img src="https://i.ibb.co/hN3Fbjw/photo-2025-05-19-16-58-32.jpg" alt="photo-2025-05-19-16-58-32" border="0">                  
 </div>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="telegram-bot">
                     <div class="project-image">
                         <img src="https://i.ibb.co/DgTfK3bw/hummer-dwjn.png" alt="hummer-dwjn" border="0">                   
                     </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="desktop">
                     <div class="project-image">
                        <img src="https://i.ibb.co/JjFzMt4d/logo.png" alt="logo" border="0">                  
                     </div>
@@ -146,29 +146,33 @@
             <div class="contact-info">
                 <h2 class="section-title">Get In Touch</h2>
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out to me using the contact form or through my social media profiles.</p>
-                <p>Email: your.email@example.com</p>
-                <p>Location: City, Country</p>
+                <p>Email: abdulazizshamsiyev635@gmai.com</p>
+                <p>Location: Karabuk, Turkey</p>
             </div>
             <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+                <form 
+        id="contactForm" 
+        action="https://formspree.io/f/xyzwvekq" 
+        method="POST"
+        class="fs-form"
+        target="_top"
+    >
+        <div class="form-group fs-field">
+            <label for="name" class="fs-label">Name</label>
+            <input type="text" id="name" class="form-control fs-input" name="name" required>
+        </div>
+        <div class="form-group fs-field">
+            <label for="email" class="fs-label">Email</label>
+            <input type="email" id="email" class="form-control fs-input" name="email" required>
+        </div>
+        <div class="form-group fs-field">
+            <label for="message" class="fs-label">Message</label>
+            <textarea id="message" class="form-control fs-textarea" name="message" required></textarea>
+        </div>
+        <div class="fs-button-group">
+            <button type="submit" class="submit-button fs-button">Send Message</button>
+        </div>
+    </form>
             </div>
         </div>
     </section>
