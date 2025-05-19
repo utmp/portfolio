@@ -1,3 +1,4 @@
+console.log('%c Oh you are a developer huh!', 'color: #ff0000; font-size: 20px; font-weight: bold;');
 const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
         
